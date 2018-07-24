@@ -1,0 +1,21 @@
+{% extends 'layouts.html'%}
+{% block content%}
+
+<table>
+  <tr>
+  <th>Id</th>
+  <th>Title</th>
+  <th>Created at</th>
+  </tr>
+  {%for blog in blogs%}
+  <tr>
+    <td>{{blog.id}}</td>
+    <td>{{blog.title}}</td>
+    <td>{{blog.entrytime}}</td>
+  </tr>
+  {%endfor%}
+</table>
+
+
+
+{%endblock%}
