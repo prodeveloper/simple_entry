@@ -6,11 +6,11 @@ blogs
       - initialize tables//done
   - views
     - add a blogs
-      - show a form
-      - take data from form
-      - how to store form data
-    - view all blogs
+      - show a form//done
+      - take data from form//dome
+      - how to store form data//done
+    - view all blogs//done
   - templates
-    - layouts
-    - index (lists all blogs)
+    - layouts//done
+    - index (lists all blogs)//done
     - add_blog

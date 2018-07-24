@@ -18,6 +18,23 @@ class Blog(Model):
     body = TextField(default='A post body')
     entrytime = DateTimeField(default=datetime.datetime.now)
 
+    @classmethod
+    def add(cls, title, body):
+        try:
+            Blog.create(
+                title=title,
+                body=body
+            )
+        except IntegrityError:
+            pass
+
+    @classmethod
+    def list(cls):
+        initialize()
+        blogs = Blog.select()
+        return blogs
+
+
     class Meta:
         database = db
 
